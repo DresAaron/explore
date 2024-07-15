@@ -41,7 +41,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'vq-chat',
+    outDir: 'VQ-Chat',
     lib: {
       entry: './web-components/main.ts',
       name: 'vq-chat',
