@@ -34,12 +34,12 @@ jobs:
       - run: git config --global user.name "Github CD bot"
       - run: git config --global user.email "aaron.hui.ji@outlook.com"
       - name: Output NPM Token
-        run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_KEY }}"
+        run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_TOKEN }}"
       - name: publish 🚀️
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_KEY }}" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm version ${{ github.event.release.tag_name }}
           npm publish
         working-directory: ./apps/vq-web-component/VQ-Chat
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_KEY}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
