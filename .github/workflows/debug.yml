@@ -25,5 +25,5 @@ jobs:
           cache-dependency-path: 'pnpm-lock.yaml'
       - name: Output NPM Key
         run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_KEY }}"
-      - name: Output NPM Token
-        run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_TOKEN }}"
+      - name: Output ABC
+        run: echo "NODE_AUTH_TOKEN=${{ secrets.ABC }}"
