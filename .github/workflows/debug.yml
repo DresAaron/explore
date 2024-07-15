@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Output NPM Key
-        run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_KEY }}"
+        run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_TOKEN }}"
       - name: Output ABC
         run: echo "ABC=${{ secrets.ABC }}"
