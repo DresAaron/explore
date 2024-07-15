@@ -24,6 +24,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: pnpm
           cache-dependency-path: 'pnpm-lock.yaml'
+      - name: Configure npm authentication
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Install dependencies 📦️
         run: pnpm install
       - name: Build
