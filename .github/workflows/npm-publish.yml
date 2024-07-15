@@ -40,5 +40,6 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: publish 🚀️
         run: npm publish
+        working-directory: ./apps/vq-web-component/VQ-Chat
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
