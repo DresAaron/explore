@@ -35,6 +35,7 @@ jobs:
       - run: git config --global user.email "aaron.hui.ji@outlook.com"
       - name: publish 🚀️
         run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm version ${{ github.event.release.tag_name }}
           npm publish
         working-directory: ./apps/vq-web-component/VQ-Chat
