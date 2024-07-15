@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+          registry-url: 'https://registry.npmjs.org'
           cache-dependency-path: 'pnpm-lock.yaml'
       - name: Install dependencies 📦️
         run: pnpm install
@@ -39,6 +40,5 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_KEY }}" > ~/.npmrc
           npm version ${{ github.event.release.tag_name }}
           npm publish
-        working-directory: ./apps/vq-web-component/VQ-Chat
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_KEY}}
