@@ -21,26 +21,20 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          registry-url: https://registry.npmjs.org/
           cache: pnpm
           cache-dependency-path: 'pnpm-lock.yaml'
       - name: Install dependencies 📦️
         run: pnpm install
       - name: Build
         run: pnpm --filter vq-chat build:ce
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
-      - run: |
-          ls
+      - name: Jump to dist
+        run: |
+          find apps
           cd ./apps/vq-web-component/vq-chat
-      - run: npm version ${{ github.event.release.tag_name }}
-      - run: npm publish
+      - name: Set version
+        run: npm version ${{ github.event.release.tag_name }}
+      - name: publish 🚀️
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
