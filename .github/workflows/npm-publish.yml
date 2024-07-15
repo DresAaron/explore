@@ -30,10 +30,11 @@ jobs:
         run: pnpm --filter vq-chat build:ce
       - name: Jump to dist
         run: |
-          find apps
           cd ./apps/vq-web-component/vq-chat
       - name: Set version
         run: npm version ${{ github.event.release.tag_name }}
+        env:
+          GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
       - name: publish 🚀️
         run: npm publish
         env:
