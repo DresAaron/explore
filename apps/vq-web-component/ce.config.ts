@@ -30,7 +30,7 @@ export default defineConfig({
       targets: [
         {
           src: normalizePath(path.resolve(__dirname, './web-components/package.json')),
-          dest: normalizePath(path.resolve(__dirname, './vq-chat'))
+          dest: normalizePath(path.resolve(__dirname, './VQ-Chat'))
         }
       ]
     })
