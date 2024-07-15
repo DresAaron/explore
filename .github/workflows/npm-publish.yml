@@ -30,7 +30,7 @@ jobs:
         run: pnpm --filter vq-chat build:ce
       - name: Jump to dist
         run: |
-          cd ./apps/vq-web-component/vq-chat
+          cd ./apps/vq-web-component/VQ-Chat
       - run: git config --global user.name "Github CD bot"
       - run: git config --global user.email "aaron.hui.ji@outlook.com"
       - name: Set version
