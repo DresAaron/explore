@@ -1,0 +1,11 @@
+{
+  "name": "VQ-Chat",
+  "version": "0.0.1",
+  "description": "Experimental web component package based on Vue and Quasar",
+  "main": "dist/vq-chat.umd.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
