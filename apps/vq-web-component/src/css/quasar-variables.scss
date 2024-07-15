@@ -1,0 +1,146 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #1976d2;
+$secondary: #26a69a;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+$dark-page: #121212;
+
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+:host {
+  --q-primary: #1976d2;
+  --q-secondary: #26a69a;
+  --q-accent: #9c27b0;
+
+  --q-dark: #1d1d1d;
+  --q-dark-page: #121212;
+
+  --q-positive: #21ba45;
+  --q-negative: #c10015;
+  --q-info: #31ccec;
+  --q-warning: #f2c037;
+}
+
+.text-mac-close {
+  color: #ff5f57 !important;
+}
+.bg-mac-close {
+  background: #ff5f57 !important;
+}
+
+.text-mac-min {
+  color: #ffbd2e !important;
+}
+.bg-mac-min {
+  background: #ffbd2e !important;
+}
+
+.text-mac-max {
+  color: #27c93f !important;
+}
+.bg-mac-max {
+  background: #27c93f !important;
+}
+
+.text-twitter {
+  color: #1e3050 !important;
+}
+
+.bg-twitter {
+  background: #1e3050 !important;
+}
+
+.text-facebook {
+  color: #1877f2 !important;
+}
+
+.bg-facebook {
+  background: #1877f2 !important;
+}
+
+.text-linkedin {
+  color: #0077b5 !important;
+}
+
+.bg-linkedin {
+  background: #0077b5 !important;
+}
+
+.text-reddit {
+  color: #ff4500 !important;
+}
+
+.bg-reddit {
+  background: #ff4500 !important;
+}
+
+.text-whatsapp {
+  color: #25d366 !important;
+}
+
+.bg-whatsapp {
+  background: #25d366 !important;
+}
+
+.text-telegram {
+  color: #0088cc !important;
+}
+
+.bg-telegram {
+  background: #0088cc !important;
+}
+
+.bg-msg-bubble {
+  background: #03dac6 !important;
+}
+
+.text-msg-bubble {
+  color: var(--q-secondary);
+  background-image: linear-gradient(45deg, var(--q-secondary) 25%, #f2d7ee);
+}
+
+.text-auto-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.bg-prompt {
+  background-color: #e4fffb;
+}
+.body--dark .bg-prompt {
+  background-color: #262a2a;
+}
+.coupon-banner-background {
+  background: linear-gradient(to right, rgb(0, 85, 255), rgb(255, 151, 169));
+  background-size: 200% 100%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
