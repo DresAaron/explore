@@ -17,6 +17,7 @@ jobs:
         name: Setup pnpm
         with:
           run_install: false
+          version: 9
       - uses: actions/setup-node@v3
         with:
           node-version: 18
