@@ -45,7 +45,7 @@
     "vue-tsc": "^2.0.21"
   },
   "files": [
-    "dist/vq-chat",
+    "VQ-Chat",
     "package.json",
     "README.md"
   ]

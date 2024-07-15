@@ -2,8 +2,8 @@
   "name": "vq_chatbox",
   "version": "0.0.0",
   "description": "Experimental web component package based on Vue and Quasar",
-  "main": "VQ-Chat/vq-chat.umd.cjs",
-  "module": "VQ-Chat/vq-chat.umd.cjs",
+  "main": "vq-chat.umd.cjs",
+  "module": "vq-chat.umd.cjs",
   "type": "module",
   "private": false,
   "scripts": {
