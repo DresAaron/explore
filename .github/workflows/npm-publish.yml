@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    if: github.ref === 'refs/heads/vq-chat'
+    if: github.ref == 'refs/heads/vq-chat'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
