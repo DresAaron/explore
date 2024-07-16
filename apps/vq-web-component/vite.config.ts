@@ -29,6 +29,9 @@ export default defineConfig(({ mode }) => ({
     }
   },
   define: {
-    'process.env': loadEnv(mode, process.cwd())
+    process: {
+      ...process,
+      env: loadEnv(mode, process.cwd())
+    }
   }
 }));
