@@ -2,9 +2,9 @@
   "name": "vq-chatbox",
   "version": "0.0.0",
   "description": "Experimental web component package based on Vue and Quasar",
-  "main": "vq-chat.umd.cjs",
-  "module": "vq-chat.umd.cjs",
-  "type": "module",
+  "main": "vq-chat.js",
+  "module": "vq-chat.js",
+  "type": "commonjs",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
