@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:chat": "pnpm --filter vq-chat build:ce"
+    "build:chat": "pnpm --filter vq-chat build:ce",
+    "run:blog-parser": "pnpm --filter ghost-parser start"
   },
   "keywords": [],
   "author": "",
